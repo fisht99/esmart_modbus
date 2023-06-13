@@ -135,6 +135,10 @@ esmart_registers = [
     ESmartRegister("         wBatUvB", esmart_data_item=7, esmart_address=0x06, data_type=u16, modbus_address=13, modbus_type=ModbusRegisterType.HoldingRegister),
 
     ESmartRegister("  wBacklightTime", esmart_data_item=2, esmart_address=0x16, data_type=u16, modbus_address=14, modbus_type=ModbusRegisterType.HoldingRegister),
+    
+    ESmartRegister("  wBatVoltRatio", esmart_data_item=3, esmart_address=0x03, data_type=u16, modbus_address=15, modbus_type=ModbusRegisterType.HoldingRegister),
+    ESmartRegister("  wBatVoltOffset", esmart_data_item=3, esmart_address=0x04, data_type=u16, modbus_address=16, modbus_type=ModbusRegisterType.HoldingRegister),
+    
 
     ESmartRegister("     loadEnabled", esmart_data_item=4, esmart_address=0x01, data_type=u16, modbus_address=1, modbus_type=ModbusRegisterType.Coil,
                    esmart_to_modbus=lambda x: x == 5117,
