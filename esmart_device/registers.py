@@ -138,6 +138,10 @@ esmart_registers = [
     
     ESmartRegister("  wBatVoltRatio", esmart_data_item=3, esmart_address=0x03, data_type=u16, modbus_address=15, modbus_type=ModbusRegisterType.HoldingRegister),
     ESmartRegister("  wBatVoltOffset", esmart_data_item=3, esmart_address=0x04, data_type=u16, modbus_address=16, modbus_type=ModbusRegisterType.HoldingRegister),
+    ESmartRegister("  wLoadVoltRatio", esmart_data_item=3, esmart_address=0x09, data_type=u16, modbus_address=17, modbus_type=ModbusRegisterType.HoldingRegister),
+    ESmartRegister("  wLoadVoltOffset", esmart_data_item=3, esmart_address=0x0A, data_type=u16, modbus_address=18, modbus_type=ModbusRegisterType.HoldingRegister),
+    ESmartRegister("  wOutVoltRatio", esmart_data_item=3, esmart_address=0x0B, data_type=u16, modbus_address=19, modbus_type=ModbusRegisterType.HoldingRegister),
+    ESmartRegister("  wOutVoltOffset", esmart_data_item=3, esmart_address=0x0C, data_type=u16, modbus_address=20, modbus_type=ModbusRegisterType.HoldingRegister),
     
 
     ESmartRegister("     loadEnabled", esmart_data_item=4, esmart_address=0x01, data_type=u16, modbus_address=1, modbus_type=ModbusRegisterType.Coil,
